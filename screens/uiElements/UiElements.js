@@ -16,6 +16,7 @@ const UiElements = (props) => {
         onPress={() => navigate("Buttons")}
       />
 
+
       <PrimaryButton
         buttonName="Inputs"
         onPress={() => navigate("Inputs")}
