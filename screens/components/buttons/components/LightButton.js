@@ -1,27 +1,17 @@
-import React  from "react";
+import React from "react";
 import { StyleSheet, Text, Pressable } from "react-native";
-import Styles from "../../../../style/Styles";
-import Colors from "../../../../style/Colors";
+import ButtonStyle from "../../../../style/ButtonStyle";
 
-const button = Styles.button;
-const content = Styles.content;
-const colors = Colors;
+const button = ButtonStyle.button;
 
 const LightButton = (props) => {
   return (
-      <Pressable style={[button.fullButton, styles.light]}>
-        <Text style={[content.textRegular,styles.buttonText]}>{props.buttonName}</Text>
-      </Pressable>
+    <Pressable style={[button.button, button.lightFullButton]}>
+      <Text style={[button.textDark]}>{props.buttonName}</Text>
+    </Pressable>
   );
 };
 
-const styles = StyleSheet.create({
-  light: {
-    backgroundColor:Colors.light
-  },
-  buttonText: {
-    color:Colors.dark
-  },
-});
+const styles = StyleSheet.create({});
 
 export default LightButton;

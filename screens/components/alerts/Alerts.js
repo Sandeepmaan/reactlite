@@ -15,10 +15,16 @@ const content = Styles.content;
 
 const Alerts = (props) => {
   const { navigate } = props.navigation;
+  const goBack = () => {
+    props.navigation.goBack();
+  };
   return (
     <SafeAreaView style={[screen.defaultScreen]}>
       <StatusBar backgroundColor={Colors.colorWhite} barStyle="dark-content" />
-      <DefaultHeader title="Alerts"/>
+      <DefaultHeader
+        title="Alerts"
+        goBack={goBack}
+      />
       <View style={[space.px15]}>
         <PrimaryAlert
           alertText="Order has been placed. Your will be redirect for make your payment."

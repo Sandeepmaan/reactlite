@@ -1,5 +1,22 @@
 import Colors from "./Colors";
 
+const header = ({
+  header: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: Colors.colorWhite,
+    height: 50,
+    paddingEnd: 15,
+  },
+  backArrow: {
+    paddingStart: 15,
+    paddingEnd: 10,
+  },
+  headerIcon: {
+    width: 20,
+    height: 20,
+  },
+});
 const flex = ({
   flex0: {
     flex: 0,
@@ -80,28 +97,20 @@ const space = ({
   mb1: {
     marginBottom: 10,
   },
+  mb2: {
+    marginBottom: 20,
+  },
   ml1: {
     marginStart: 10,
   },
   my1: {
     marginVertical: 10,
   },
+  my2: {
+    marginVertical: 20,
+  },
   px15: {
     paddingHorizontal: 15,
-  },
-});
-
-
-const button = ({
-  fullButton: {
-    width: "100%",
-    height: 50,
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: 30,
-    backgroundColor: Colors.primary,
-    marginVertical: 5,
   },
 });
 
@@ -117,10 +126,10 @@ const input = ({
 });
 
 export default {
+  header,
   flex,
   screen,
   content,
   space,
-  button,
   input,
 };

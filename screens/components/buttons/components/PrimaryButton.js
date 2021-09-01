@@ -2,36 +2,24 @@ import React, { useState } from "react";
 import { StyleSheet, Text, Pressable } from "react-native";
 import Styles from "../../../../style/Styles";
 import Colors from "../../../../style/Colors";
+import ButtonStyle from "../../../../style/ButtonStyle";
 
-const button = Styles.button;
-const content = Styles.content;
-const colors = Colors;
+const button = ButtonStyle.button;
 
 const PrimaryButton = (props) => {
-  const [buttonPress, setButtonPress] = useState(0);
   return (
     <Pressable
-      style={
-        // ({ pressed }) =>
-        [
-          // { backgroundColor: pressed ? Colors.primaryBorder : Colors.warningBorder },
-          button.fullButton, styles.primary]
-      }
-      // onPress={()=> setButtonPress(buttonPress +1)}
+      style={[button.button, button.primaryFullButton]}
       onPress={props.onPress}
     >
-      <Text style={[content.textRegular, styles.buttonText]}>{props.buttonName}</Text>
+      <Text style={[button.textLight]}>
+        {props.buttonName}
+      </Text>
     </Pressable>
   );
 };
 
 const styles = StyleSheet.create({
-  primary: {
-    backgroundColor: Colors.primary,
-  },
-  buttonText: {
-    color: Colors.colorWhite,
-  },
 });
 
 export default PrimaryButton;

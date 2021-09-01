@@ -1,27 +1,17 @@
-import React  from "react";
+import React from "react";
 import { StyleSheet, Text, Pressable } from "react-native";
-import Styles from "../../../../style/Styles";
-import Colors from "../../../../style/Colors";
+import ButtonStyle from "../../../../style/ButtonStyle";
 
-const button = Styles.button;
-const content = Styles.content;
-const colors = Colors;
+const button = ButtonStyle.button;
 
 const WarningButton = (props) => {
   return (
-      <Pressable style={[button.fullButton, styles.warning]}>
-        <Text style={[content.textRegular,styles.buttonText]}>{props.buttonName}</Text>
-      </Pressable>
+    <Pressable style={[button.button, button.warningFullButton]}>
+      <Text style={[button.textLight]}>{props.buttonName}</Text>
+    </Pressable>
   );
 };
 
-const styles = StyleSheet.create({
-  warning: {
-    backgroundColor:Colors.warning
-  },
-  buttonText: {
-    color:Colors.colorWhite
-  },
-});
+const styles = StyleSheet.create({});
 
 export default WarningButton;

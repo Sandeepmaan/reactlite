@@ -10,18 +10,29 @@ import InfoButton from "./components/InfoButton";
 import LightButton from "./components/LightButton";
 import DarkButton from "./components/DarkButton";
 import DefaultHeader from "../header/DefaultHeader";
+import BorderButton from "./components/BorderButton";
+import SmallButton from "./components/SmallButton";
+import SmallBorderButton from "./components/SmallBorderButton";
+import ButtonStyle from "../../../style/ButtonStyle";
+import ThemeButton from "./components/ThemeButton";
 
 const screen = Styles.screen;
 const space = Styles.space;
-const content = Styles.content;
 
 const Buttons = (props) => {
   const { navigate } = props.navigation;
+  const goBack = () => {
+    props.navigation.goBack();
+  };
   return (
     <SafeAreaView style={[screen.defaultScreen]}>
       <StatusBar backgroundColor={Colors.colorWhite} barStyle="dark-content" />
-      <DefaultHeader title="Buttons"/>
+      <DefaultHeader
+        title="Buttons"
+        goBack={goBack}
+      />
       <View style={[space.px15]}>
+        <ThemeButton buttonName="Theme" />
         <PrimaryButton buttonName="Primary" />
         <SecondaryButton buttonName="Secondary" />
         <SuccessButton buttonName="Success" />
@@ -29,6 +40,9 @@ const Buttons = (props) => {
         <InfoButton buttonName="Info" />
         <LightButton buttonName="Light" />
         <DarkButton buttonName="Dark" />
+        <BorderButton buttonName="Border" />
+        <SmallButton buttonName="Small" />
+        <SmallBorderButton buttonName="Small + Border" />
       </View>
     </SafeAreaView>
   );

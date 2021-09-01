@@ -9,6 +9,9 @@ import Alerts from "./screens/components/alerts/Alerts";
 import Inputs from "./screens/components/input/Inputs";
 import { Platform } from "react-native";
 import Avatars from "./screens/components/avatar/Avatars";
+import Modals from "./screens/components/modals/Modals";
+import Cards from "./screens/components/card/Cards";
+import Flatlists from "./screens/components/flatlists/Flatlists";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +26,7 @@ const App = () => {
             CardStyleInterpolators.forScaleFromCenterAndroid,
           headerShown: false,
         }}>
+
         <Stack.Screen name="Splash" component={Splash} />
 
         {/*ui elements*/}
@@ -31,6 +35,9 @@ const App = () => {
         <Stack.Screen name="Inputs" component={Inputs} />
         <Stack.Screen name="Avatars" component={Avatars} />
         <Stack.Screen name="Alerts" component={Alerts} />
+        <Stack.Screen name="Modals" component={Modals} />
+        <Stack.Screen name="Cards" component={Cards} />
+        <Stack.Screen name="Flatlists" component={Flatlists} />
       </Stack.Navigator>
     </NavigationContainer>
   );
