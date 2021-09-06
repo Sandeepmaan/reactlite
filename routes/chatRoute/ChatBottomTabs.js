@@ -2,9 +2,9 @@ import * as React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { View, Text, Image, StyleSheet, Platform } from "react-native";
 import Styles from "../../style/Styles";
-import Home from "../../screens/chatApp/main/home/Home";
 import BottomTabsStyle from "../../style/BottomTabsStyle";
 import { CardStyleInterpolators } from "@react-navigation/stack";
+import ChatHome from "../../screens/chatApp/main/home/ChatHome";
 import Profile from "../../screens/chatApp/main/profile/Profile";
 
 const content = Styles.content;
@@ -27,7 +27,7 @@ export default function ChatBottomTabs({ navigation, route }) {
     >
       <BottomTab.Screen
         name="Home"
-        component={Home}
+        component={ChatHome}
         options={{
           title: "",
           tabBarIcon: ({ focused, tintColor }) => (

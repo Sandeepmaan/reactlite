@@ -2,7 +2,7 @@ import * as React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { View, Text, Image, StyleSheet, Platform } from "react-native";
 import Styles from "../../style/Styles";
-import Home from "../../screens/chatApp/main/home/Home";
+import Home from "../../screens/chatApp/main/home/ChatHome";
 import BottomTabsStyle from "../../style/BottomTabsStyle";
 import { CardStyleInterpolators } from "@react-navigation/stack";
 

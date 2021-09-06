@@ -8,7 +8,7 @@ import ChatList from "./components/chatComponents/ChatList";
 const screen = Styles.screen;
 const flex = Styles.flex;
 
-const Home = (props) => {
+const ChatHome = (props) => {
   const { navigate } = props.navigation;
   return (
     <SafeAreaView style={[screen.defaultScreen]}>
@@ -27,4 +27,4 @@ const Home = (props) => {
   );
 };
 
-export default Home;
+export default ChatHome;

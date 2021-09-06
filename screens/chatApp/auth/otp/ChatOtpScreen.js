@@ -20,7 +20,7 @@ const space = Styles.space;
 const logo = Styles.logo;
 const icon = Styles.icon;
 
-const OtpScreen = (props) => {
+const ChatOtpScreen = (props) => {
   const { navigate } = props.navigation;
 
   const goBack = () => {
@@ -81,4 +81,4 @@ const OtpScreen = (props) => {
 
 const styles = StyleSheet.create({});
 
-export default OtpScreen;
+export default ChatOtpScreen;

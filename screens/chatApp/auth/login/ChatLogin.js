@@ -11,7 +11,7 @@ const flex = Styles.flex;
 const logo = Styles.logo;
 const space = Styles.space;
 
-const Login = (props) => {
+const ChatLogin = (props) => {
   const { navigate } = props.navigation;
 
   return (
@@ -42,7 +42,7 @@ const Login = (props) => {
           <View style={[space.mt5]} />
           <ThemeButton
             buttonName="Get OTP"
-            onPress={()=> navigate('OtpScreen')}
+            onPress={()=> navigate('ChatOtpScreen')}
           />
         </View>
       </View>
@@ -52,4 +52,4 @@ const Login = (props) => {
 
 const styles = StyleSheet.create({});
 
-export default Login;
+export default ChatLogin;
