@@ -1,8 +1,8 @@
-import React  from "react";
+import React from "react";
 import { SafeAreaView, StatusBar } from "react-native";
 import Styles from "../../style/Styles";
 import Colors from "../../style/Colors";
-import ThemeButton from "../components/buttons/components/ThemeButton";
+import BoxFlatlist from "../components/flatlists/components/BoxFlatlist";
 
 const screen = Styles.screen;
 
@@ -11,9 +11,10 @@ const Splash = (props) => {
   return (
     <SafeAreaView style={[screen.initialPage]}>
       <StatusBar backgroundColor={Colors.colorWhite} barStyle="dark-content" />
-      <ThemeButton
-        buttonName="Ui Elements"
-        onPress={() => navigate("UiElements")}
+      <BoxFlatlist
+        onPress1={()=> navigate('ChatRoute')}
+        onPress2={()=> navigate('Grocery')}
+        onPress3={()=> navigate('UiElements')}
       />
     </SafeAreaView>
   );

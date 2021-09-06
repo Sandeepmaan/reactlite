@@ -1,7 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, Pressable } from "react-native";
 import Styles from "../../../../style/Styles";
-import Colors from "../../../../style/Colors";
 import CardStyle from "../../../../style/CardStyle";
 
 const card = CardStyle.card;

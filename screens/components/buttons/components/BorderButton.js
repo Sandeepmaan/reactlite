@@ -6,13 +6,15 @@ const button = ButtonStyle.button;
 
 const BorderButton = (props) => {
   return (
-    <Pressable style={[button.button, button.borderFullButton]}>
+    <Pressable
+      android_ripple={button.ripple}
+      style={[button.button, button.borderFullButton]}
+    >
       <Text style={[button.textDark]}>{props.buttonName}</Text>
     </Pressable>
   );
 };
 
-const styles = StyleSheet.create({
-});
+const styles = StyleSheet.create({});
 
 export default BorderButton;

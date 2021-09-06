@@ -30,7 +30,7 @@ const input = ({
     borderTopWidth: 0,
     borderLeftWidth: 0,
     borderRightWidth: 0,
-    borderBottom: 1,
+    borderBottomWidth: 1,
     borderColor: Colors.defaultBorder,
     borderRadius: 0,
     paddingHorizontal: 0,

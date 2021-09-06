@@ -2,8 +2,8 @@ import Colors from "./Colors";
 
 const avatar = ({
   avatar: {
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
     backgroundColor: Colors.primaryLight,
     borderWidth: 1,
     borderColor: Colors.primaryLight,
@@ -11,11 +11,32 @@ const avatar = ({
     justifyContent: "center",
     alignItems: "center",
     margin: 5,
-    overflow: "hidden"
+    overflow: "hidden",
+  },
+  avatar100: {
+    width: 100,
+    height: 100,
+    borderRadius: 100,
+  },
+  avatarActive: {
+    width: 15,
+    height: 15,
+    borderRadius: 15,
+    backgroundColor: Colors.success,
+    position: "absolute",
+    right: 5,
+    bottom: 10,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  avatarActiveIcon: {
+    width: 10,
+    height: 10,
+    tintColor: Colors.colorWhite,
   },
   avatarImage: {
-    width: 70,
-    height: 70,
+    width: 50,
+    height: 50,
   },
   avatarIcon: {
     tintColor: Colors.primary,
@@ -25,7 +46,7 @@ const avatar = ({
     borderColor: Colors.primaryBorder,
   },
   round: {
-    borderRadius: 70,
+    borderRadius: 50,
   },
 });
 

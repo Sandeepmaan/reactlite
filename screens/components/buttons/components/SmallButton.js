@@ -6,7 +6,10 @@ const button = ButtonStyle.button;
 
 const SmallButton = (props) => {
   return (
-    <Pressable style={[button.button, button.smallButton]}>
+    <Pressable
+      android_ripple={button.ripple}
+      style={[button.button, button.smallButton]}
+    >
       <Text style={[button.textLight]}>{props.buttonName}</Text>
     </Pressable>
   );

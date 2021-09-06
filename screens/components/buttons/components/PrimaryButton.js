@@ -9,6 +9,7 @@ const button = ButtonStyle.button;
 const PrimaryButton = (props) => {
   return (
     <Pressable
+      android_ripple={button.ripple}
       style={[button.button, button.primaryFullButton]}
       onPress={props.onPress}
     >

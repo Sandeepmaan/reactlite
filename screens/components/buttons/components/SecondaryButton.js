@@ -6,7 +6,10 @@ const button = ButtonStyle.button;
 
 const SecondaryButton = (props) => {
   return (
-    <Pressable style={[button.button, button.secondaryFullButton]}>
+    <Pressable
+      android_ripple={button.ripple}
+      style={[button.button, button.secondaryFullButton]}
+    >
       <Text style={[button.textLight]}>{props.buttonName}</Text>
     </Pressable>
   );

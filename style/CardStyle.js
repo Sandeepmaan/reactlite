@@ -9,6 +9,14 @@ const card = ({
     paddingVertical: 10,
     borderRadius: 5,
   },
+  squareCard: {
+    flex: 0,
+    width: '50%',
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    paddingVertical: 15,
+  },
   profileCard: {
     flexDirection: "row",
     alignItems: "center",

@@ -7,6 +7,7 @@ const button = ButtonStyle.button;
 const SmallBorderButton = (props) => {
   return (
     <Pressable
+      android_ripple={button.ripple}
       style={[button.button, button.smallBorderButton]}
       onPress={props.onPress}
     >

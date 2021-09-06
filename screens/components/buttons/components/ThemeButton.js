@@ -7,8 +7,9 @@ const button = ButtonStyle.button;
 const ThemeButton = (props) => {
   return (
     <Pressable
-      style={[button.button, button.themeButton]}
       onPress={props.onPress}
+      android_ripple={button.ripple}
+      style={[button.button, button.themeButton]}
     >
       <Text style={[button.textLight]}>
         {props.buttonName}

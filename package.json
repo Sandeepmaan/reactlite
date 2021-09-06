@@ -10,7 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-clipboard/clipboard": "^1.8.4",
     "@react-native-masked-view/masked-view": "^0.2.6",
+    "@react-navigation/bottom-tabs": "^6.0.5",
     "@react-navigation/native": "^6.0.2",
     "@react-navigation/native-stack": "^6.1.0",
     "@react-navigation/stack": "^6.0.7",
@@ -18,9 +20,11 @@
     "react-native": "0.65.1",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-modal": "^13.0.0",
+    "react-native-otp-inputs": "^7.0.3",
     "react-native-phone-input": "^1.1.0",
     "react-native-safe-area-context": "^3.3.0",
-    "react-native-screens": "^3.6.0"
+    "react-native-screens": "^3.6.0",
+    "react-native-swipeout": "^2.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

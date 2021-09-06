@@ -1,16 +1,30 @@
 import Colors from "./Colors";
 
+const diameter = 100;
+
 const button = ({
+  ripple: {
+    color: Colors.defaultBorder,
+    borderless: false,
+    borderRadius: 0,
+  },
+  listRipple: {
+    color: Colors.defaultBorder,
+    borderless: false,
+    borderRadius: 0,
+  },
   button: {
     height: 44,
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 5,
     marginVertical: 5,
+    overflow: "hidden",
   },
   themeButton: {
     width: "100%",
-    borderRadius: 5,
+    borderRadius: 0,
     backgroundColor: Colors.themeColor2,
   },
   primaryFullButton: {
@@ -60,8 +74,6 @@ const button = ({
     borderRadius: 5,
     backgroundColor: Colors.primary,
   },
-
-
   smallButton: {
     maxWidth: 200,
     paddingHorizontal: 30,
@@ -84,6 +96,17 @@ const button = ({
   textDark: {
     color: Colors.dark,
     fontSize: 16,
+  },
+  otpInput: {
+    // backgroundColor: Colors.light,
+    borderColor: Colors.defaultBorder,
+    borderBottomWidth: 1,
+    borderRadius: 0,
+    color: Colors.dark,
+    height: 60,
+    textAlign: "center",
+    fontSize: 20,
+    marginBottom: 20,
   },
 });
 
