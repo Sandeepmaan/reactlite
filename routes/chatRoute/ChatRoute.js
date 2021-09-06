@@ -9,6 +9,7 @@ import Login from "../../screens/chatApp/auth/login/Login";
 import OtpScreen from "../../screens/chatApp/auth/otp/OtpScreen";
 import EditChat from "../../screens/chatApp/main/home/EditChat";
 import Contact from "../../screens/chatApp/main/contact/Contact";
+import ChatScreen from "../../screens/chatApp/main/chatScreen/ChatScreen";
 
 const Default = createNativeStackNavigator();
 
@@ -28,6 +29,7 @@ const ChatRoute = () => {
 
       <Default.Screen name="ChatBottomTabs" component={ChatBottomTabs} />
       <Default.Screen name="EditChat" component={EditChat} />
+      <Default.Screen name="ChatScreen" component={ChatScreen} />
 
       <Default.Screen name="Contact" component={Contact} />
     </Default.Navigator>

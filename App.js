@@ -14,6 +14,8 @@ import Cards from "./screens/components/card/Cards";
 import Flatlists from "./screens/components/flatlists/Flatlists";
 import ChatRoute from "./routes/chatRoute/ChatRoute";
 
+import RechargeRoute from "./routes/rechargeRoute/RechargeRoute";
+
 const Stack = createNativeStackNavigator();
 
 const App = () => {
@@ -32,6 +34,9 @@ const App = () => {
 
         {/*Chat Screens*/}
         <Stack.Screen name="ChatRoute" component={ChatRoute} />
+
+        {/*Recharge Screens*/}
+        <Stack.Screen name="RechargeRoute" component={RechargeRoute} />
 
         {/*ui elements*/}
         <Stack.Screen name="UiElements" component={UiElements} />

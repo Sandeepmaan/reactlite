@@ -1,9 +1,9 @@
 import * as React from "react";
-import { SafeAreaView, View, StyleSheet, Text, StatusBar } from "react-native";
+import { SafeAreaView, View, StatusBar } from "react-native";
 import Colors from "../../../../style/Colors";
 import Styles from "../../../../style/Styles";
 import ChatHeader from "../../components/chatHeader/ChatHeader";
-import ChatList from "./components/ChatList";
+import ChatList from "./components/chatComponents/ChatList";
 
 const screen = Styles.screen;
 const flex = Styles.flex;
@@ -21,7 +21,7 @@ const Home = (props) => {
         pressRight={()=> navigate('Contact')}
       />
       <View style={[flex.flex1]}>
-        <ChatList />
+        <ChatList onPress={()=> navigate('ChatScreen')} />
       </View>
     </SafeAreaView>
   );

@@ -13,7 +13,7 @@ const Splash = (props) => {
       <StatusBar backgroundColor={Colors.colorWhite} barStyle="dark-content" />
       <BoxFlatlist
         onPress1={()=> navigate('ChatRoute')}
-        onPress2={()=> navigate('Grocery')}
+        onPress2={()=> navigate('RechargeRoute')}
         onPress3={()=> navigate('UiElements')}
       />
     </SafeAreaView>

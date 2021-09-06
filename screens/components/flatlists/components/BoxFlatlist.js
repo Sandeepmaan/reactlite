@@ -10,7 +10,7 @@ const space = Styles.space;
 const BoxFlatlist = (props) => {
   const data = ([
     { title: "Chat" ,onPress: props.onPress1 },
-    { title: "Grocery" ,onPress: props.onPress2 },
+    { title: "Quick Charge" ,onPress: props.onPress2 },
     { title: "UI Elements" ,onPress: props.onPress3 },
   ]);
 

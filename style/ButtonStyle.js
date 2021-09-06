@@ -25,7 +25,7 @@ const button = ({
   themeButton: {
     width: "100%",
     borderRadius: 0,
-    backgroundColor: Colors.themeColor2,
+    backgroundColor: Colors.chatTheme,
   },
   primaryFullButton: {
     width: "100%",

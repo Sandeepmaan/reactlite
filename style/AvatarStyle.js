@@ -22,7 +22,7 @@ const avatar = ({
     width: 15,
     height: 15,
     borderRadius: 15,
-    backgroundColor: Colors.success,
+    backgroundColor: Colors.chatTheme,
     position: "absolute",
     right: 5,
     bottom: 10,

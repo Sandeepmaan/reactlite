@@ -27,7 +27,7 @@ const card = ({
     height: 30,
     borderRadius: 30,
     marginEnd: 10,
-    backgroundColor: Colors.themeColor2,
+    backgroundColor: Colors.chatTheme,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -55,7 +55,7 @@ const card = ({
   badge: {
     paddingHorizontal: 10,
     paddingVertical: 5,
-    backgroundColor: Colors.themeColor2,
+    backgroundColor: Colors.chatTheme,
     alignSelf: "flex-end",
     borderRadius: 5,
   },

@@ -16,7 +16,7 @@ const tabs = ({
   activeBorder: {
     width: 40,
     height: 4,
-    backgroundColor: Colors.themeColor2,
+    backgroundColor: Colors.chatTheme,
     borderBottomStartRadius: 4,
     borderBottomEndRadius: 4,
     top: -8,
@@ -30,7 +30,7 @@ const tabs = ({
     top: -8,
   },
   activeTabtext: {
-    color: Colors.themeColor2,
+    color: Colors.chatTheme,
     fontSize: 14,
     marginBottom: 5,
   },
@@ -55,7 +55,7 @@ const tabs = ({
     width: 16,
     height: 16,
     marginBottom: 5,
-    tintColor: Colors.themeColor2,
+    tintColor: Colors.chatTheme,
   },
   inactiveIcon: {
     width: 16,
@@ -69,7 +69,7 @@ const tabs = ({
     top: 4,
     width: 16,
     height: 16,
-    backgroundColor: Colors.themeColor2,
+    backgroundColor: Colors.chatTheme,
     borderRadius: 16,
     justifyContent: "center",
     alignItems: "center",

@@ -20,7 +20,7 @@ const space = Styles.space;
 const logo = Styles.logo;
 const icon = Styles.icon;
 
-const OtpScreen = (props) => {
+const RechargeOtpScreen = (props) => {
   const { navigate } = props.navigation;
 
   const goBack = () => {
@@ -56,7 +56,7 @@ const OtpScreen = (props) => {
           <View style={[flex.alignCenter, { width: "100%" }]}>
             <OtpInput />
             <ThemeButton
-              onPress={() => navigate("ChatBottomTabs")}
+              onPress={() => navigate("RechargeBottomTabs")}
               buttonName="Verify"
             />
 
@@ -81,4 +81,4 @@ const OtpScreen = (props) => {
 
 const styles = StyleSheet.create({});
 
-export default OtpScreen;
+export default RechargeOtpScreen;

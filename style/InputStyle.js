@@ -6,6 +6,7 @@ const input = ({
     height: 50,
     borderWidth: 1,
     paddingHorizontal: 15,
+    color: Colors.dark,
   },
 
   defaultInput: {
@@ -46,6 +47,28 @@ const input = ({
     width: 24,
     height: 24,
     tintColor: Colors.defaultBorder,
+  },
+  messageInput: {
+    backgroundColor: Colors.colorWhite,
+    borderWidth: 0,
+    borderTopWidth: 1,
+    borderTopColor: Colors.defaultBorder,
+  },
+  sendIconButton: {
+    width: 40,
+    height: 40,
+    backgroundColor: Colors.chatTheme,
+    position: "absolute",
+    top: 5,
+    right: 10,
+    borderRadius: 4,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  sendIcon: {
+    width: 20,
+    height: 20,
+    tintColor: Colors.colorWhite,
   },
 });
 

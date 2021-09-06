@@ -23,6 +23,7 @@ const ChatList = (props) => {
           index={index}
           title={item.title}
           detail={item.detail}
+          onPress={props.onPress}
         />
       )}
     />

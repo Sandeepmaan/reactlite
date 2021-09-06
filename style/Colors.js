@@ -1,5 +1,9 @@
 const themeColor1 = "#303030";
-const themeColor2 = "#f19533";
+
+const chatTheme = "#f19533";
+const chatThemeBorder = "#c57720";
+const chatThemeLight = "#d4aa7f";
+
 const colorWhite = "#ffffff";
 const colorBlack = "#000000";
 const defaultBorder = "#ced4da";
@@ -30,7 +34,11 @@ const dark = "#1c2b46";
 
 export default {
   themeColor1,
-  themeColor2,
+
+  chatTheme,
+  chatThemeBorder,
+  chatThemeLight,
+
   colorWhite,
   colorBlack,
   defaultBorder,

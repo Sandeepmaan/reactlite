@@ -1,11 +1,10 @@
 import React from "react";
 import { View, Text, FlatList, StyleSheet, Pressable } from "react-native";
-import Styles from "../../../../../style/Styles";
+import Styles from "../../../../../../style/Styles";
 import Swipeout from "react-native-swipeout";
-import Colors from "../../../../../style/Colors";
-import ImageAvatar from "../../../../components/avatar/components/ImageAvatar";
-import ButtonStyle from "../../../../../style/ButtonStyle";
-import ImageAvatarActive from "../../../../components/avatar/components/ImageAvatarActive";
+import Colors from "../../../../../../style/Colors";
+import ImageAvatar from "../../../../../components/avatar/components/ImageAvatar";
+import ButtonStyle from "../../../../../../style/ButtonStyle";
 
 const button = ButtonStyle.button;
 const content = Styles.content;
@@ -23,20 +22,16 @@ const ChatListCard = (props) => {
   return (
     <Swipeout right={swipeoutBtns}>
       <Pressable
+        onPress={props.onPress}
         android_ripple={button.listRipple}
         style={[styles.card, props.selectItem && { backgroundColor: Colors.danger }]}
       >
-        {!props.selected ?
-          <ImageAvatar
-            round={true}
-            border={true}
-          />
-          :
-          <ImageAvatarActive
-            round={true}
-            border={true}
-          />
-        }
+        <ImageAvatar
+          round={true}
+          border={true}
+          image={require("../../../../../../assets/images/avatar.jpeg")}
+        />
+
         <View style={[flex.flex1, space.ml1]}>
           <Text style={[content.textMedium]}>{props.item.title}</Text>
           <Text
