@@ -11,7 +11,7 @@ const card = ({
   },
   squareCard: {
     flex: 0,
-    width: '50%',
+    width: "50%",
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
@@ -62,6 +62,23 @@ const card = ({
   badgeText: {
     fontSize: 12,
     color: Colors.colorWhite,
+  },
+
+  rechargeCard: {
+    flex: 0,
+    paddingHorizontal: 0,
+    paddingVertical: 15,
+    borderWidth: 0,
+    borderRadius: 10,
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
+    backgroundColor: Colors.rechargeTheme,
+  },
+  rechargeIconCard: {
+    flexDirection: "column",
+    alignItems: "center",
+    paddingHorizontal: 5,
+    borderWidth: 0,
   },
 });
 

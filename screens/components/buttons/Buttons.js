@@ -13,8 +13,7 @@ import DefaultHeader from "../header/DefaultHeader";
 import BorderButton from "./components/BorderButton";
 import SmallButton from "./components/SmallButton";
 import SmallBorderButton from "./components/SmallBorderButton";
-import ButtonStyle from "../../../style/ButtonStyle";
-import ThemeButton from "./components/ThemeButton";
+import ThemeButton from "../../chatApp/components/buttons/ThemeButton";
 
 const screen = Styles.screen;
 const space = Styles.space;

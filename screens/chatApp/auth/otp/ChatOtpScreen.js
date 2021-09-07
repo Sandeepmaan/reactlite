@@ -10,7 +10,7 @@ import {
 } from "react-native";
 import Styles from "../../../../style/Styles";
 import Colors from "../../../../style/Colors";
-import ThemeButton from "../../../components/buttons/components/ThemeButton";
+import ThemeButton from "../../components/buttons/ThemeButton";
 import OtpInput from "../../../components/input/components/OtpInput";
 
 const screen = Styles.screen;

@@ -1,11 +1,6 @@
 import React from "react";
 import { View, FlatList, StyleSheet } from "react-native";
-import Styles from "../../../../style/Styles";
-import FlatlistStyle from "../../../../style/FlatlistStyle";
 import DefaultCard from "../../card/components/DefaultCards";
-
-const flatlist = FlatlistStyle.flatlist;
-const space = Styles.space;
 
 const Grid2FlatList = (props) => {
   const data = ([

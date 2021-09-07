@@ -25,6 +25,14 @@ const header = ({
     width: 20,
     height: 20,
   },
+
+
+  heading: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: Colors.colorWhite,
+    height: 50,
+  },
 });
 
 const logo = ({
@@ -117,6 +125,15 @@ const content = ({
   },
   textCenter: {
     textAlign: "center",
+  },
+  textColorWhite: {
+    color:Colors.colorWhite,
+  },
+  textColorBlack: {
+    color:Colors.colorBlack,
+  },
+  textColorLight: {
+    color:Colors.defaultBorder,
   },
 });
 
@@ -321,6 +338,14 @@ const input = ({
   },
 });
 
+const divider = ({
+  divider: {
+    width: "100%",
+    height: 1,
+    backgroundColor: Colors.TransparentBorder,
+  },
+});
+
 export default {
   header,
   logo,
@@ -330,4 +355,5 @@ export default {
   space,
   input,
   icon,
+  divider,
 };

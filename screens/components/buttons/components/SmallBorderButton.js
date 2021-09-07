@@ -1,8 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, ActivityIndicator } from "react-native";
 import ButtonStyle from "../../../../style/ButtonStyle";
+import Colors from "../../../../style/Colors";
+import Styles from "../../../../style/Styles";
 
 const button = ButtonStyle.button;
+const content = Styles.content;
 
 const SmallBorderButton = (props) => {
   return (
@@ -11,9 +14,13 @@ const SmallBorderButton = (props) => {
       style={[button.button, button.smallBorderButton]}
       onPress={props.onPress}
     >
-      <Text style={[button.textDark]}>
-        {props.buttonName}
-      </Text>
+      {props.loading ?
+        <ActivityIndicator size="small" color={Colors.colorBlack} />
+        :
+        <Text style={[button.textLight, content.textColorBlack]}>
+          {props.buttonName}
+        </Text>
+      }
     </Pressable>
   );
 };

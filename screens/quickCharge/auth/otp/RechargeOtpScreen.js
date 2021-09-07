@@ -10,8 +10,8 @@ import {
 } from "react-native";
 import Styles from "../../../../style/Styles";
 import Colors from "../../../../style/Colors";
-import ThemeButton from "../../../components/buttons/components/ThemeButton";
 import OtpInput from "../../../components/input/components/OtpInput";
+import RechargeThemeButton from "../../components/buttons/RechargeThemeButton";
 
 const screen = Styles.screen;
 const flex = Styles.flex;
@@ -55,8 +55,8 @@ const RechargeOtpScreen = (props) => {
 
           <View style={[flex.alignCenter, { width: "100%" }]}>
             <OtpInput />
-            <ThemeButton
-              onPress={() => navigate("RechargeBottomTabs")}
+            <RechargeThemeButton
+              onPress={() => navigate("RechargeHome")}
               buttonName="Verify"
             />
 
@@ -67,7 +67,7 @@ const RechargeOtpScreen = (props) => {
               <Pressable
                 style={[{ marginStart: 5 }]}
               >
-                <Text style={[content.textLight, { color: Colors.chatTheme }]}>
+                <Text style={[content.textLight, { color: Colors.rechargeTheme }]}>
                   Resend
                 </Text>
               </Pressable>

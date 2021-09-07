@@ -2,8 +2,8 @@ import React from "react";
 import { SafeAreaView, View, Image, StatusBar, StyleSheet, Text } from "react-native";
 import Styles from "../../../../style/Styles";
 import Colors from "../../../../style/Colors";
-import ThemeButton from "../../../components/buttons/components/ThemeButton";
 import BorderBottomInput from "../../../components/input/components/BorderBottomInput";
+import RechargeThemeButton from "../../components/buttons/RechargeThemeButton";
 
 const screen = Styles.screen;
 const content = Styles.content;
@@ -40,7 +40,7 @@ const RechargeLogin = (props) => {
             placeholder="Enter Phone Number"
           />
           <View style={[space.mt5]} />
-          <ThemeButton
+          <RechargeThemeButton
             buttonName="Get OTP"
             onPress={() => navigate("RechargeOtpScreen")}
           />

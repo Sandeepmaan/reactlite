@@ -18,7 +18,7 @@ const WithoutBorderInput = (props) => {
         name={props.name}
         onChangeText={props.onChange}
         placeholder={props.placeholder}
-        placeholderTextColor={Colors.defaultBorder}
+        placeholderTextColor={Colors.colorWhite}
         editable={props.editable}
         underlineColorAndroid="transparent"
       />

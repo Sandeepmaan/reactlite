@@ -16,7 +16,7 @@ const SquareCard = (props) => {
           { width: props.width },
           { height: props.width },
           { marginEnd: 10 },
-          props.length + 1 && { marginEnd: 0 },
+          (props.index + 1 )  % 2 === 0 && { marginEnd: 0 },
         ]
       }>
       <Text style={[card.title]}>{props.title}</Text>

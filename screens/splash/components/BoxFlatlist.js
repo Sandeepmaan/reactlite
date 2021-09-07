@@ -1,28 +1,25 @@
 import React from "react";
 import { View, FlatList, StyleSheet, Dimensions } from "react-native";
-import Styles from "../../../../style/Styles";
-import FlatlistStyle from "../../../../style/FlatlistStyle";
-import SquareCard from "../../card/components/CustomCards";
-
-const flatlist = FlatlistStyle.flatlist;
-const space = Styles.space;
+import SquareCard from "../../components/card/components/CustomCards";
 
 const BoxFlatlist = (props) => {
   const data = ([
-    { title: "Chat" ,onPress: props.onPress1 },
-    { title: "Quick Charge" ,onPress: props.onPress2 },
-    { title: "UI Elements" ,onPress: props.onPress3 },
+    { title: "Chat", onPress: props.onPress1 },
+    { title: "Quick Charge", onPress: props.onPress2 },
+    { title: "Food App Coming Soon...", onPress: props.onPress3 },
+    { title: "UI Elements", onPress: props.onPress3 },
   ]);
 
   const renderSeparator = ({ item, index }) => (
     <View style={{ height: 10 }} />
   );
 
-  const windowWidth = Dimensions.get("window").width / 2 - 20;
+  const windowWidth = Dimensions.get("window").width / 2 - 25;
 
   return (
     <FlatList
       data={data}
+      columnWrapperStyle={[{ justifyContent: "center" }]}
       horizontal={false}
       numColumns={2}
       ItemSeparatorComponent={renderSeparator}
@@ -32,7 +29,7 @@ const BoxFlatlist = (props) => {
         <SquareCard
           item={item}
           index={index}
-          length={props.length}
+          length={data.length}
           width={windowWidth}
           title={item.title}
           detail={item.detail}

@@ -3,7 +3,7 @@ import { SafeAreaView, StatusBar, View } from "react-native";
 import Styles from "../../style/Styles";
 import Colors from "../../style/Colors";
 import DefaultHeader from "../components/header/DefaultHeader";
-import ThemeButton from "../components/buttons/components/ThemeButton";
+import ThemeButton from "../chatApp/components/buttons/ThemeButton";
 
 const screen = Styles.screen;
 const space = Styles.space;

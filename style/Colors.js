@@ -4,9 +4,14 @@ const chatTheme = "#f19533";
 const chatThemeBorder = "#c57720";
 const chatThemeLight = "#d4aa7f";
 
+const rechargeTheme = "#332155";
+const rechargeThemeBorder = "#5e468c";
+const rechargeThemeLight = "#a78bdc";
+
 const colorWhite = "#ffffff";
 const colorBlack = "#000000";
 const defaultBorder = "#ced4da";
+const TransparentBorder = "rgba(206,212,218,0.16)";
 
 const primary = "#6576ff";
 const primaryLight = "#edefff";
@@ -39,9 +44,14 @@ export default {
   chatThemeBorder,
   chatThemeLight,
 
+  rechargeTheme,
+  rechargeThemeBorder,
+  rechargeThemeLight,
+
   colorWhite,
   colorBlack,
   defaultBorder,
+  TransparentBorder,
 
   primary,
   primaryLight,

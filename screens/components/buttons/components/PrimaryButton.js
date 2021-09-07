@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, ActivityIndicator } from "react-native";
 import Styles from "../../../../style/Styles";
 import Colors from "../../../../style/Colors";
 import ButtonStyle from "../../../../style/ButtonStyle";
@@ -13,9 +13,13 @@ const PrimaryButton = (props) => {
       style={[button.button, button.primaryFullButton]}
       onPress={props.onPress}
     >
-      <Text style={[button.textLight]}>
-        {props.buttonName}
-      </Text>
+      {props.loading ?
+        <ActivityIndicator size="small" color={Colors.colorWhite} />
+        :
+        <Text style={[button.textLight]}>
+          {props.buttonName}
+        </Text>
+      }
     </Pressable>
   );
 };

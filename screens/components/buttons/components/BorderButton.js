@@ -1,8 +1,11 @@
 import React from "react";
-import { StyleSheet, Text, Pressable } from "react-native";
+import { StyleSheet, Text, Pressable, ActivityIndicator } from "react-native";
 import ButtonStyle from "../../../../style/ButtonStyle";
+import Colors from "../../../../style/Colors";
+import Styles from "../../../../style/Styles";
 
 const button = ButtonStyle.button;
+const content = Styles.content;
 
 const BorderButton = (props) => {
   return (
@@ -10,7 +13,13 @@ const BorderButton = (props) => {
       android_ripple={button.ripple}
       style={[button.button, button.borderFullButton]}
     >
-      <Text style={[button.textDark]}>{props.buttonName}</Text>
+      {props.loading ?
+        <ActivityIndicator size="small" color={Colors.colorBlack} />
+        :
+        <Text style={[button.textLight, content.textColorBlack]}>
+          {props.buttonName}
+        </Text>
+      }
     </Pressable>
   );
 };

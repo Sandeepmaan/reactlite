@@ -23,8 +23,8 @@ const input = ({
     paddingStart: 50,
   },
   withoutBorder: {
-    backgroundColor: Colors.dark,
-    borderColor: Colors.dark,
+    backgroundColor: Colors.defaultBorder,
+    borderColor: Colors.defaultBorder,
     borderRadius: 4,
   },
   borderBottom: {
@@ -47,6 +47,7 @@ const input = ({
     width: 24,
     height: 24,
     tintColor: Colors.defaultBorder,
+    zIndex: 9,
   },
   messageInput: {
     backgroundColor: Colors.colorWhite,
@@ -69,6 +70,26 @@ const input = ({
     width: 20,
     height: 20,
     tintColor: Colors.colorWhite,
+  },
+  inputButton: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    position: "absolute",
+    right: 0,
+    bottom: 10,
+    borderRadius: 4,
+  },
+
+
+  chatSearchInput: {
+    backgroundColor: Colors.primaryLight,
+    borderWidth: 0,
+  },
+  sendMoneyInput: {
+    height: 100,
+    fontSize: 40,
+    textAlign: "center",
+    borderWidth: 0,
   },
 });
 
