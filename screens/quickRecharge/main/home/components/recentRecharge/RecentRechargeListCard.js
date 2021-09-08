@@ -19,7 +19,6 @@ const RecentRechargeListCard = (props) => {
       >
         {!props.selected ?
           <ImageAvatar
-            round={true}
             border={true}
           />
           :

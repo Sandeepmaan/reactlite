@@ -67,7 +67,7 @@ const RechargeOtpScreen = (props) => {
               <Pressable
                 style={[{ marginStart: 5 }]}
               >
-                <Text style={[content.textLight, { color: Colors.rechargeTheme }]}>
+                <Text style={[content.textLight, { color: Colors.danger }]}>
                   Resend
                 </Text>
               </Pressable>

@@ -69,7 +69,7 @@ const card = ({
     paddingHorizontal: 0,
     paddingVertical: 15,
     borderWidth: 0,
-    borderRadius: 10,
+    borderRadius: 20,
     borderTopLeftRadius: 0,
     borderTopRightRadius: 0,
     backgroundColor: Colors.rechargeTheme,

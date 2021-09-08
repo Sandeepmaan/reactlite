@@ -1,13 +1,9 @@
 import React from "react";
-import { View, Text, StyleSheet, TextInput, Pressable } from "react-native";
-import Styles from "../../../../style/Styles";
+import { StyleSheet, TextInput } from "react-native";
 import Colors from "../../../../style/Colors";
 import InputStyle from "../../../../style/InputStyle";
 
 const input = InputStyle.input;
-const content = Styles.content;
-const flex = Styles.flex;
-const space = Styles.space;
 
 const SendMoneyInput = (props) => {
   return (

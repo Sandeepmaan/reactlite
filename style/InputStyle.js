@@ -7,6 +7,7 @@ const input = ({
     borderWidth: 1,
     paddingHorizontal: 15,
     color: Colors.dark,
+    fontFamily: "goregular",
   },
 
   defaultInput: {
@@ -71,13 +72,16 @@ const input = ({
     height: 20,
     tintColor: Colors.colorWhite,
   },
-  inputButton: {
-    paddingHorizontal: 10,
-    paddingVertical: 5,
-    position: "absolute",
-    right: 0,
-    bottom: 10,
-    borderRadius: 4,
+  otpInput: {
+    // backgroundColor: Colors.light,
+    borderColor: Colors.defaultBorder,
+    borderBottomWidth: 1,
+    borderRadius: 0,
+    color: Colors.dark,
+    height: 60,
+    textAlign: "center",
+    fontSize: 20,
+    marginBottom: 20,
   },
 
 
@@ -86,6 +90,7 @@ const input = ({
     borderWidth: 0,
   },
   sendMoneyInput: {
+    width: "100%",
     height: 100,
     fontSize: 40,
     textAlign: "center",

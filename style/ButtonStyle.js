@@ -82,14 +82,14 @@ const button = ({
     backgroundColor: Colors.primary,
   },
   smallButton: {
-    maxWidth: 200,
+    maxWidth: 250,
     paddingHorizontal: 30,
     borderRadius: 4,
     backgroundColor: Colors.primary,
     marginVertical: 5,
   },
   smallBorderButton: {
-    maxWidth: 200,
+    maxWidth: 250,
     paddingHorizontal: 30,
     borderRadius: 4,
     marginVertical: 5,
@@ -99,21 +99,20 @@ const button = ({
   textLight: {
     color: Colors.colorWhite,
     fontSize: 16,
+    fontFamily: "goregular",
   },
   textDark: {
     color: Colors.dark,
     fontSize: 16,
+    fontFamily: "goregular",
   },
-  otpInput: {
-    // backgroundColor: Colors.light,
-    borderColor: Colors.defaultBorder,
-    borderBottomWidth: 1,
-    borderRadius: 0,
-    color: Colors.dark,
-    height: 60,
-    textAlign: "center",
-    fontSize: 20,
-    marginBottom: 20,
+  inputButton: {
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    position: "absolute",
+    right: 0,
+    bottom: 10,
+    borderRadius: 4,
   },
 });
 

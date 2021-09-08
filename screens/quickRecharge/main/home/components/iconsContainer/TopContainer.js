@@ -18,7 +18,7 @@ const TopContainer = (props) => {
       <View style={[space.px15, space.mb2, flex.row, flex.alignCenter]}>
         <IconAvatar />
         <View style={[space.ml1]}>
-          <Text style={[content.textRegular, content.textColorWhite]}>$000</Text>
+          <Text style={[content.textMedium, content.textColorWhite]}>$000</Text>
           <Text style={[content.textLight, content.textColorWhite]}>Available Balance</Text>
         </View>
       </View>

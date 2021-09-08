@@ -110,30 +110,50 @@ const content = ({
   textLight: {
     fontSize: 12,
     letterSpacing: .4,
+    fontFamily: "goregular",
   },
   textRegular: {
     fontSize: 14,
     letterSpacing: .4,
+    fontFamily: "goregular",
   },
   textMedium: {
     fontSize: 16,
     letterSpacing: .4,
+    fontFamily: "goregular",
   },
   textLarge: {
     fontSize: 20,
     letterSpacing: .4,
+    fontFamily: "goregular",
   },
   textCenter: {
     textAlign: "center",
+    fontFamily: "goregular",
   },
   textColorWhite: {
-    color:Colors.colorWhite,
+    color: Colors.colorWhite,
   },
   textColorBlack: {
-    color:Colors.colorBlack,
+    color: Colors.colorBlack,
   },
   textColorLight: {
-    color:Colors.defaultBorder,
+    color: Colors.defaultBorder,
+  },
+});
+
+const fonts = ({
+  fontRegular: {
+    fontFamily: "goregular2",
+  },
+  fontThin: {
+    fontFamily: "gothin",
+  },
+  fontThick: {
+    fontFamily: "gothick",
+  },
+  fontMedium: {
+    fontFamily: "gomedium",
   },
 });
 
@@ -340,9 +360,49 @@ const input = ({
 
 const divider = ({
   divider: {
-    width: "100%",
-    height: 1,
-    backgroundColor: Colors.TransparentBorder,
+    flex: 1,
+  },
+});
+
+const qrScanner = ({
+  qrScanner: {
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: Colors.Transparent40,
+  },
+  qrOverlay: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    top: 50,
+    bottom: 100,
+    borderRadius: 10,
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  findScanButton: {
+    paddingHorizontal: 20,
+    paddingVertical: 15,
+    backgroundColor: Colors.TransparentDark60,
+    borderRadius: 10,
+  },
+  torchButton: {
+    width: 50,
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: Colors.TransparentDark60,
+    borderRadius: 50,
+  },
+  qrScanIcon: {
+    width: 200,
+    height: 200,
+    tintColor: Colors.colorWhite,
+  },
+  torchIcon: {
+    width: 20,
+    height: 20,
+    tintColor: Colors.colorWhite,
   },
 });
 
@@ -356,4 +416,5 @@ export default {
   input,
   icon,
   divider,
+  qrScanner,
 };

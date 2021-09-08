@@ -20,7 +20,7 @@ const SquareCard = (props) => {
         ]
       }>
       <Text style={[card.title]}>{props.title}</Text>
-      {props.detail && <Text style={[card.detail]}>{props.detail}</Text>}
+      {props.detail && <Text style={[card.detail,]}>{props.detail}</Text>}
     </Pressable>
   );
 };

@@ -21,7 +21,7 @@ const RechargeSplash = (props) => {
       <View style={[space.mt5]} />
       <SmallBorderButton
         onPress={() => navigate("RechargeLogin")}
-        buttonName="QUICK CHARGE"
+        buttonName="QUICK RECHARGE"
       />
     </SafeAreaView>
   );

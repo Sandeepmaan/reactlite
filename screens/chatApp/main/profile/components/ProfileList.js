@@ -6,8 +6,8 @@ const ProfileList = (props) => {
 
   const data = ([
     { title: "Account" },
-    { title: "Notification" },
-    { title: "Invite Friend" },
+    { title: "Notifications" },
+    { title: "Invite Friends" },
     { title: "Help" },
     { title: "Logout" },
   ]);

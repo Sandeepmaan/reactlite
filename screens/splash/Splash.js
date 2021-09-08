@@ -2,7 +2,7 @@ import React from "react";
 import { SafeAreaView, View, StatusBar, Image } from "react-native";
 import Styles from "../../style/Styles";
 import Colors from "../../style/Colors";
-import BoxFlatlist from "./components/BoxFlatlist";
+import SplashGridlist from "./components/SplashGridlist";
 
 const screen = Styles.screen;
 const space = Styles.space;
@@ -23,7 +23,7 @@ const Splash = (props) => {
         </View>
 
         <View style={[flex.flex1]}>
-          <BoxFlatlist
+          <SplashGridlist
             onPress1={() => navigate("ChatRoute")}
             onPress2={() => navigate("RechargeRoute")}
             onPress3={() => navigate("UiElements")}

@@ -3,12 +3,13 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Platform } from "react-native";
 import { CardStyleInterpolators } from "@react-navigation/stack"
 
-import RechargeSplash from "../../screens/quickCharge/main/rechargeSplash/RechargeSplash";
-import RechargeLogin from "../../screens/quickCharge/auth/login/RechargeLogin";
-import RechargeOtpScreen from "../../screens/quickCharge/auth/otp/RechargeOtpScreen";
-import RechargeHome from "../../screens/quickCharge/main/home/RechargeHome";
-import PhoneRecharge from "../../screens/quickCharge/main/phoneRecharge/PhoneRecharge";
-import SendMoney from "../../screens/quickCharge/main/sendMoney/SendMoney";
+import RechargeSplash from "../../screens/quickRecharge/main/rechargeSplash/RechargeSplash";
+import RechargeLogin from "../../screens/quickRecharge/auth/login/RechargeLogin";
+import RechargeOtpScreen from "../../screens/quickRecharge/auth/otp/RechargeOtpScreen";
+import RechargeHome from "../../screens/quickRecharge/main/home/RechargeHome";
+import PhoneRecharge from "../../screens/quickRecharge/main/phoneRecharge/PhoneRecharge";
+import SendMoney from "../../screens/quickRecharge/main/sendMoney/SendMoney";
+import QRScanner from "../../screens/quickRecharge/main/qrCode/QRScanner";
 
 const Default = createNativeStackNavigator();
 
@@ -29,10 +30,10 @@ const RechargeRoute = () => {
       <Default.Screen name="RechargeHome" component={RechargeHome} />
       <Default.Screen name="PhoneRecharge" component={PhoneRecharge} />
       <Default.Screen name="SendMoney" component={SendMoney} />
+      <Default.Screen name="QRScanner" component={QRScanner} />
 
     </Default.Navigator>
   );
 };
 
-export default RechargeRoute
-;
+export default RechargeRoute;

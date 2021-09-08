@@ -1,13 +1,19 @@
 import React from "react";
 import { View, FlatList, StyleSheet, Dimensions } from "react-native";
-import SquareCard from "../../components/card/components/CustomCards";
+import SplashGridListItem from "./SplashGridListItem";
+import Colors from "../../../style/Colors";
 
-const BoxFlatlist = (props) => {
+const SplashGridlist = (props) => {
   const data = ([
-    { title: "Chat", onPress: props.onPress1 },
-    { title: "Quick Charge", onPress: props.onPress2 },
-    { title: "Food App Coming Soon...", onPress: props.onPress3 },
-    { title: "UI Elements", onPress: props.onPress3 },
+    { title: "Chat", onPress: props.onPress1, cardColor: Colors.chatTheme, textColor: Colors.colorWhite },
+    { title: "Quick Recharge", onPress: props.onPress2, cardColor: Colors.rechargeTheme, textColor: Colors.colorWhite },
+    {
+      title: "Food App Coming Soon...",
+      onPress: props.onPress3,
+      cardColor: Colors.primaryLight,
+      textColor: Colors.colorBlack,
+    },
+    { title: "UI Elements", onPress: props.onPress3, cardColor: Colors.themeColor1, textColor: Colors.colorWhite },
   ]);
 
   const renderSeparator = ({ item, index }) => (
@@ -26,7 +32,7 @@ const BoxFlatlist = (props) => {
       showsVerticalScrollIndicator={false}
       keyExtractor={(item, index) => "key" + index}
       renderItem={({ item, index, separators }) => (
-        <SquareCard
+        <SplashGridListItem
           item={item}
           index={index}
           length={data.length}
@@ -43,4 +49,4 @@ const BoxFlatlist = (props) => {
 
 const styles = StyleSheet.create({});
 
-export default BoxFlatlist;
+export default SplashGridlist;

@@ -31,7 +31,7 @@ const ChatLogin = (props) => {
           </Text>
           <View style={[space.mt1]} />
           <Text style={[content.textMedium, content.textCenter]}>
-            We will send you a One Time Password on your phone number.
+            We will send you a One Time Password on your phone number
           </Text>
         </View>
 

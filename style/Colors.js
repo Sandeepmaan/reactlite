@@ -11,7 +11,10 @@ const rechargeThemeLight = "#a78bdc";
 const colorWhite = "#ffffff";
 const colorBlack = "#000000";
 const defaultBorder = "#ced4da";
-const TransparentBorder = "rgba(206,212,218,0.16)";
+const TransparentBorder = "rgba(206,212,218,0.20)";
+const Transparent40 = "rgba(206,212,218,0.40)";
+const TransparentLight60 = "rgba(206,212,218,0.40)";
+const TransparentDark60 = "rgba(19,19,19,0.60)";
 
 const primary = "#6576ff";
 const primaryLight = "#edefff";
@@ -52,6 +55,9 @@ export default {
   colorBlack,
   defaultBorder,
   TransparentBorder,
+  Transparent40,
+  TransparentLight60,
+  TransparentDark60,
 
   primary,
   primaryLight,
