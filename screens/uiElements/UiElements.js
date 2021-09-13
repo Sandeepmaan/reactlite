@@ -16,7 +16,7 @@ const UiElements = (props) => {
   return (
     <SafeAreaView style={[screen.defaultScreen]}>
       <StatusBar backgroundColor={Colors.colorWhite} barStyle="dark-content" />
-      <DefaultHeader title="Avatars" goBack={goBack} />
+      <DefaultHeader title="UI Elements" goBack={goBack} />
       <View style={[space.px15]}>
         <ThemeButton
           buttonName="Buttons"

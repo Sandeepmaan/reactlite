@@ -46,7 +46,7 @@ const Modals = (props) => {
         />
         <ErrorModal
           buttonName="Error Modal"
-          content="Profile has been successfully updated!"
+          content="Uh-oh! Your trail has expired."
           icon={require('../../../assets/icons/error.png')}
           isModalVisible={isErrorModalVisible}
           toggleModal={toggleErrorModal}

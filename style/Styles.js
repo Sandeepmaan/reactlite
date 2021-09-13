@@ -1,9 +1,9 @@
-import Colors from "./Colors";
+import Colors from './Colors';
 
-const header = ({
+const header = {
   header: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: Colors.colorWhite,
     height: 50,
     paddingEnd: 15,
@@ -26,22 +26,21 @@ const header = ({
     height: 20,
   },
 
-
   heading: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     backgroundColor: Colors.colorWhite,
     height: 50,
   },
-});
+};
 
-const logo = ({
+const logo = {
   logo: {
     width: 100,
     height: 100,
   },
-});
-const flex = ({
+};
+const flex = {
   flex0: {
     flex: 0,
   },
@@ -49,53 +48,53 @@ const flex = ({
     flex: 1,
   },
   row: {
-    flexDirection: "row",
+    flexDirection: 'row',
   },
   column: {
-    flexDirection: "column",
+    flexDirection: 'column',
   },
   justifyStart: {
-    justifyContent: "flex-start",
+    justifyContent: 'flex-start',
   },
   justifyEnd: {
-    justifyContent: "flex-end",
+    justifyContent: 'flex-end',
   },
   justifyCenter: {
-    justifyContent: "center",
+    justifyContent: 'center',
   },
   justifySpace: {
-    justifyContent: "space-between",
+    justifyContent: 'space-between',
   },
   alignStart: {
-    alignItems: "flex-start",
+    alignItems: 'flex-start',
   },
   alignCenter: {
-    alignItems: "center",
+    alignItems: 'center',
   },
   alignEnd: {
-    alignItems: "flex-end",
+    alignItems: 'flex-end',
   },
   centerBoth: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-});
+};
 
-const screen = ({
+const screen = {
   initialPage: {
     flex: 1,
     backgroundColor: Colors.colorWhite,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingHorizontal: 15,
   },
   defaultScreen: {
     flex: 1,
     backgroundColor: Colors.colorWhite,
   },
-});
+};
 
-const icon = ({
+const icon = {
   icon20: {
     width: 20,
     height: 20,
@@ -104,32 +103,32 @@ const icon = ({
     width: 30,
     header: 30,
   },
-});
+};
 
-const content = ({
+const content = {
   textLight: {
     fontSize: 12,
-    letterSpacing: .4,
-    fontFamily: "goregular",
+    letterSpacing: 0.4,
+    fontFamily: 'helveticaLight',
   },
   textRegular: {
     fontSize: 14,
-    letterSpacing: .4,
-    fontFamily: "goregular",
+    letterSpacing: 0.4,
+    fontFamily: 'Helvetica',
   },
   textMedium: {
     fontSize: 16,
-    letterSpacing: .4,
-    fontFamily: "goregular",
+    letterSpacing: 0.4,
+    fontFamily: 'Helvetica',
   },
   textLarge: {
     fontSize: 20,
-    letterSpacing: .4,
-    fontFamily: "goregular",
+    letterSpacing: 0.4,
+    fontFamily: 'HelveticaBold',
   },
   textCenter: {
-    textAlign: "center",
-    fontFamily: "goregular",
+    textAlign: 'center',
+    fontFamily: 'Helvetica',
   },
   textColorWhite: {
     color: Colors.colorWhite,
@@ -140,24 +139,24 @@ const content = ({
   textColorLight: {
     color: Colors.defaultBorder,
   },
-});
+};
 
-const fonts = ({
+const fonts = {
   fontRegular: {
-    fontFamily: "goregular2",
+    fontFamily: 'goregular2',
   },
   fontThin: {
-    fontFamily: "gothin",
+    fontFamily: 'gothin',
   },
   fontThick: {
-    fontFamily: "gothick",
+    fontFamily: 'gothick',
   },
   fontMedium: {
-    fontFamily: "gomedium",
+    fontFamily: 'gomedium',
   },
-});
+};
 
-const space = ({
+const space = {
   mt1: {
     marginTop: 10,
   },
@@ -248,7 +247,6 @@ const space = ({
   my5: {
     marginVertical: 50,
   },
-
 
   pt1: {
     paddingTop: 10,
@@ -341,44 +339,43 @@ const space = ({
     paddingVertical: 50,
   },
 
-
   px15: {
     paddingHorizontal: 15,
   },
-});
+};
 
-const input = ({
+const input = {
   defaultInput: {
-    width: "100%",
+    width: '100%',
     height: 50,
     borderWidth: 1,
     borderColor: Colors.primaryBorder,
     borderRadius: 4,
     paddingHorizontal: 15,
   },
-});
+};
 
-const divider = ({
+const divider = {
   divider: {
     flex: 1,
   },
-});
+};
 
-const qrScanner = ({
+const qrScanner = {
   qrScanner: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: Colors.Transparent40,
   },
   qrOverlay: {
-    position: "absolute",
+    position: 'absolute',
     left: 0,
     right: 0,
     top: 50,
     bottom: 100,
     borderRadius: 10,
-    flexDirection: "column",
-    alignItems: "center",
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   findScanButton: {
     paddingHorizontal: 20,
@@ -389,8 +386,8 @@ const qrScanner = ({
   torchButton: {
     width: 50,
     height: 50,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: Colors.TransparentDark60,
     borderRadius: 50,
   },
@@ -404,7 +401,7 @@ const qrScanner = ({
     height: 20,
     tintColor: Colors.colorWhite,
   },
-});
+};
 
 export default {
   header,

@@ -26,7 +26,8 @@ const Splash = (props) => {
           <SplashGridlist
             onPress1={() => navigate("ChatRoute")}
             onPress2={() => navigate("RechargeRoute")}
-            onPress3={() => navigate("UiElements")}
+            onPress3={() => navigate("FoodRoute")}
+            onPress4={() => navigate("UiElements")}
           />
         </View>
       </View>
